@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TTD TODO app';
+  items = [];
+  add = function(value){
+    this.items.push(value);
+  };
+  constructor() {
+    this.items = ['Test', 'Execute', 'Refactor'];
+  }
 }
